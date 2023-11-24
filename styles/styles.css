@@ -76,6 +76,7 @@
 
 label {
     font-size: calc(10px + 0.001vw);
+    letter-spacing: 1.2px;
 }
 
 form {
@@ -86,7 +87,42 @@ input {
     margin: 0 20px 20px 0;
 }
 
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+    
+}
+
+input:focus {
+    border-color:lightblue;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.179);
+}
+
+input:invalid {
+    border-color: red;
+}
+
 .bottom-part {
     flex-direction: column;
     background-color: rgb(249, 250, 251);
+    padding: 20px 0 0 30px;
+    height: 36vh;
+}
+
+.bottom-part a {
+    color: #596D48;
+}
+
+.bottom-part a:visited {
+    color: #4c732a;
+}
+
+.bottone {
+    padding: 10px 50px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+    font-size: calc(16px + 00.1em);
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
